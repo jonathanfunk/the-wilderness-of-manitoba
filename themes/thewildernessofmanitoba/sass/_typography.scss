@@ -8,9 +8,7 @@ input,
 select,
 textarea {
 	color: $color__text-main;
-	font-family: $font__main;
-	@include font-size(1);
-	line-height: $font__line-height-body;
+	font: 15px $font__main;
 }
 
 /* Headings */
@@ -22,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Copy */
 
 p {
+	margin-top: 0;
 	margin-bottom: $base__space-unit;
 }
 

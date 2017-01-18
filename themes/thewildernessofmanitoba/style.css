@@ -230,11 +230,8 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5; }
+  color: #7a7a7a;
+  font: 15px "Times", serif; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -242,6 +239,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Copy */
 p {
+  margin-top: 0;
   margin-bottom: 1.5em; }
 
 dfn, cite, em, i {
@@ -419,6 +417,12 @@ a {
     outline: 0; }
 
 /* Menus */
+.site-header {
+  width: 100vw;
+  height: 100vh;
+  background-color: red; }
+
+/* Menus */
 .main-navigation {
   clear: both;
   display: block;
@@ -591,6 +595,40 @@ a {
 
 .bypostauthor {
   display: block; }
+
+/* Structure */
+.container {
+  width: 1000px;
+  padding: 30px 25px;
+  margin: 0 auto;
+  height: 100%;
+  background-color: orange;
+  opacity: .5; }
+
+.site-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.content-area {
+  width: 700px; }
+  .content-area .site-main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+
+.widget-area {
+  width: 200px;
+  background-color: pink;
+  margin-right: 25px; }
+
+.collumn {
+  width: 300px;
+  margin: 0 25px 0;
+  background-color: yellow;
+  opacity: .5; }
 
 /*--------------------------------------------------------------
 # Media
