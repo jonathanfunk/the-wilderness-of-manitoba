@@ -231,11 +231,16 @@ input,
 select,
 textarea {
   color: #7a7a7a;
-  font: 15px "Times", serif; }
+  font: 15px "Times New Roman", serif; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  margin: 0; }
+
+h3 {
+  font-size: 2rem;
+  font-weight: normal; }
 
 /* Copy */
 p {
@@ -488,6 +493,43 @@ a {
   text-align: right;
   width: 50%; }
 
+/* Structure */
+.container {
+  width: 1000px;
+  padding: 30px 25px;
+  margin: 0 auto;
+  height: 100%; }
+
+.site-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .site-content .title {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    background-color: #efeff0; }
+  .site-content .content {
+    padding: 30px 0 30px;
+    height: auto; }
+
+.content-area {
+  width: 700px; }
+  .content-area .site-main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .content-area .collumn {
+    width: 300px;
+    margin: 0 25px 0; }
+
+.widget-area {
+  width: 200px;
+  margin-right: 25px; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -595,40 +637,6 @@ a {
 
 .bypostauthor {
   display: block; }
-
-/* Structure */
-.container {
-  width: 1000px;
-  padding: 30px 25px;
-  margin: 0 auto;
-  height: 100%;
-  background-color: orange;
-  opacity: .5; }
-
-.site-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-
-.content-area {
-  width: 700px; }
-  .content-area .site-main {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-
-.widget-area {
-  width: 200px;
-  background-color: pink;
-  margin-right: 25px; }
-
-.collumn {
-  width: 300px;
-  margin: 0 25px 0;
-  background-color: yellow;
-  opacity: .5; }
 
 /*--------------------------------------------------------------
 # Media
