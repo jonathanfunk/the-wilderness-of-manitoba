@@ -425,7 +425,8 @@ a {
 .site-header {
   width: 100vw;
   height: 100vh;
-  background-color: red; }
+  background: url(../../images/wilderness.jpg);
+  background-size: cover; }
 
 /* Menus */
 .main-navigation {
