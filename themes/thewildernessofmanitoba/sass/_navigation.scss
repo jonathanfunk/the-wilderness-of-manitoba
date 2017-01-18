@@ -31,6 +31,10 @@ a {
 	height: 100vh;
 	background: url(../../images/wilderness.jpg);
 	background-size: cover;
+	.site-branding {
+		max-width: 280px;
+		margin: 0 auto;
+	}
 }
 
 /* Menus */
