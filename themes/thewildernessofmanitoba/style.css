@@ -231,7 +231,7 @@ input,
 select,
 textarea {
   color: #7a7a7a;
-  font: 15px "Times New Roman", serif; }
+  font: 14px "Lora", serif; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -239,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
 h3 {
-  font-size: 2rem;
+  font-size: 35px;
   font-weight: normal; }
 
 /* Copy */
@@ -424,13 +424,15 @@ a {
 /* Menus */
 .site-header {
   width: 100vw;
-  background: url(../../images/wilderness-mobile.jpg); }
+  background: url(../../images/wilderness-mobile.jpg);
+  background-size: cover; }
   .site-header .site-branding {
     max-width: 280px;
     margin: 0 auto; }
   @media (min-width: 600px) {
     .site-header {
-      background: url(../../images/wilderness-tablet.jpg); } }
+      background: url(../../images/wilderness-tablet.jpg);
+      background-size: cover; } }
   @media (min-width: 1000px) {
     .site-header {
       background: url(../../images/wilderness.jpg);
@@ -505,7 +507,7 @@ a {
 
 /* Structure */
 .container {
-  width: 1000px;
+  max-width: 1000px;
   padding: 30px 25px;
   margin: 0 auto;
   height: 100%; }
@@ -513,8 +515,10 @@ a {
 .site-content {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .site-content .title {
     width: 100%;
     height: 50px;
@@ -525,20 +529,23 @@ a {
     padding: 30px 0 30px;
     height: auto; }
 
-.content-area {
-  width: 700px; }
-  .content-area .site-main {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-  .content-area .collumn {
-    width: 300px;
+.site-main {
+  max-width: 700px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .site-main .collumn {
+    max-width: 300px;
     margin: 0 25px 0; }
+  .site-main .panel iframe {
+    margin-bottom: 30px; }
 
 .widget-area {
-  width: 200px;
-  margin-right: 25px; }
+  max-width: 300px;
+  margin: 0 25px 0; }
 
 /*--------------------------------------------------------------
 # Accessibility
