@@ -44,7 +44,7 @@
 			position: relative;
 			cursor: pointer;
 			&:after {
-				content: '\f107';
+				content: '\f105';
 				font-family: "FontAwesome";
 				text-align: center;
 				border-left: 4px solid white;
@@ -57,6 +57,21 @@
 		}
 		.content {
 			display: none;
+		}
+	}
+	.current {
+		.title {
+			&:after {
+				content: '\f107';
+				font-family: "FontAwesome";
+				text-align: center;
+				border-left: 4px solid white;
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: 50px;
+				width: 50px;
+			}
 		}
 	}
 }

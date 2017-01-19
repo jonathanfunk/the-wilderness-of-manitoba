@@ -245,8 +245,11 @@ h2 {
   font-size: 20px; }
 
 h3 {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: normal; }
+  @media (min-width: 1000px) {
+    h3 {
+      font-size: 35px; } }
 
 /* Copy */
 p {
@@ -507,7 +510,7 @@ a {
     position: relative;
     cursor: pointer; }
     .site-main .panel .title:after {
-      content: '\f107';
+      content: '\f105';
       font-family: "FontAwesome";
       text-align: center;
       border-left: 4px solid white;
@@ -518,6 +521,16 @@ a {
       width: 50px; }
   .site-main .panel .content {
     display: none; }
+  .site-main .current .title:after {
+    content: '\f107';
+    font-family: "FontAwesome";
+    text-align: center;
+    border-left: 4px solid white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 50px; }
 
 /*--------------------------------------------------------------
 # Accessibility
