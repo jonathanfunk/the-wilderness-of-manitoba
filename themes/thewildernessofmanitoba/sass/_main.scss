@@ -35,6 +35,12 @@
 	aside {
 		max-width: 300px;
 		margin: 0 25px 0;
+		@include desktop {
+			width: 200px;
+			h3 {
+				font-size: 25px;
+			}
+		}
 	}
 	.panel {
 		iframe {

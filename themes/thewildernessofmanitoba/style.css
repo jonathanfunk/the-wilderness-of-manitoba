@@ -504,6 +504,11 @@ a {
   .site-main aside {
     max-width: 300px;
     margin: 0 25px 0; }
+    @media (min-width: 1000px) {
+      .site-main aside {
+        width: 200px; }
+        .site-main aside h3 {
+          font-size: 25px; } }
   .site-main .panel iframe {
     margin-bottom: 30px; }
   .site-main .panel .title {
