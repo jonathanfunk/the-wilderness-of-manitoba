@@ -33,16 +33,16 @@
 					<nav class="social">
 						<ul>
 							<li>
-								<a href="https://www.facebook.com/wildernessofmanitoba"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+								<a href="https://www.facebook.com/wildernessofmanitoba" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 							</li>
 							<li>
-								<a href-"https://www.instagram.com/wildernessofmanitoba/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								<a href="https://www.instagram.com/wildernessofmanitoba/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 							</li>
 							<li>
-								<a href="https://twitter.com/wildofmanitoba"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="https://twitter.com/wildofmanitoba" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 							</li>
 							<li>
-								<a href-"https://www.youtube.com/user/wildernessofmanitoba"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+								<a href="https://www.youtube.com/user/wildernessofmanitoba" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
 							</li>
 						</ul>
 					</nav><!-- .social -->
