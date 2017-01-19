@@ -26,12 +26,26 @@
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 							<img src="<?php echo get_template_directory_uri() . '/images/the-wilderness-of-manitoba-logo.png'; ?>" alt="The Wilderness of Manitoba Logo" />
 						</a>
+						<h2>Across the Dark</h2>
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					</div><!-- .site-branding -->
 
-					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					</nav><!-- #site-navigation -->
+					<nav class="social">
+						<ul>
+							<li>
+								<a href="https://www.facebook.com/wildernessofmanitoba"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+							</li>
+							<li>
+								<a href-"https://www.instagram.com/wildernessofmanitoba/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							</li>
+							<li>
+								<a href="https://twitter.com/wildofmanitoba"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</li>
+							<li>
+								<a href-"https://www.youtube.com/user/wildernessofmanitoba"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</nav><!-- .social -->
 				</div>
 			</header><!-- #masthead -->
 

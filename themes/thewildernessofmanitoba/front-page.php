@@ -59,6 +59,18 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
+		<aside>
+			<div class="title"><!-- Discography -->
+				<h3>Discography</h3>
+			</div>
+			<div class="content">
+			</div>
+			<div class="title"><!-- Contact -->
+				<h3>Contact</h3>
+			</div>
+			<div class="content">
+			</div>
+		</aside>
 	</main><!-- #main -->
 </div><!-- #primary -->
 <?php get_sidebar(); ?>
