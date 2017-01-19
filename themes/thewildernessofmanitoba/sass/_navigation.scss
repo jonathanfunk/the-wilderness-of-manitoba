@@ -28,12 +28,18 @@ a {
 
 .site-header {
 	width: 100vw;
-	height: 100vh;
-	background: url(../../images/wilderness.jpg);
-	background-size: cover;
+	background: url(../../images/wilderness-mobile.jpg);
 	.site-branding {
 		max-width: 280px;
 		margin: 0 auto;
+	}
+	@include tablet {
+		background: url(../../images/wilderness-tablet.jpg);
+	}
+	@include desktop {
+		background: url(../../images/wilderness.jpg);
+		background-size: cover;
+		height: 100vh;
 	}
 }
 
