@@ -2,7 +2,7 @@
 /**
  * The template for displaying comments.
  *
- * @package RED_Starter_Theme
+ * @package The_Wilderness_Of_Manitoba
  */
 
 /*

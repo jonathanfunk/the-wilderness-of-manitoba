@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package The_Wilderness_Of_Manitoba
  */
 
 get_header(); ?>

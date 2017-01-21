@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.s
  *
- * @package RED_Starter_Theme
+ * @package The_Wilderness_Of_Manitoba
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

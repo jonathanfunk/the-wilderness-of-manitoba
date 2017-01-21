@@ -2,7 +2,7 @@
 /**
  * The template for displaying all pages.
  *
- * @package RED_Starter_Theme
+ * @package The_Wilderness_Of_Manitoba
  */
 
 get_header(); ?>

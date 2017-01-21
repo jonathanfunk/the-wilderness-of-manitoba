@@ -1,10 +1,10 @@
 <?php
 /**
- * RED Starter Theme functions and definitions.
+ * The Wilderness of Manitoba functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package RED_Starter_Theme
+ * @package The_Wilderness_Of_Manitoba
  */
 
 if ( ! function_exists( 'red_starter_setup' ) ) :
