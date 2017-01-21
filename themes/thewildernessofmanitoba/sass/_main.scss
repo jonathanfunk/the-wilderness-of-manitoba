@@ -35,6 +35,24 @@
 				max-width: calc(50% - 50px);
 			}
 		}
+		ul {
+			margin: 0;
+			padding-left: 1rem;
+		}
+		li {
+			margin-bottom: 1rem;
+		}
+		.photos {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			@include tablet {
+				justify-content: space-between;
+			}
+			p {
+				width: 135px;
+			}
+		}
 		@include desktop {
 			float: none;
 			max-width: 300px;
@@ -51,6 +69,11 @@
 		@include desktop {
 			float: none;
 			max-width: 200px;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
 		}
 	}
 	.panel {

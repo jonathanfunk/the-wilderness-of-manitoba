@@ -13,19 +13,14 @@ get_header(); ?>
 			Wilderness<br>
 			of Manitoba</h3>
 			<div class="content">
-				<p>prefers to characterize itself as an evolving entity and founding member Will Whitwham is the last man standing.</p>
-				<p>For the band’s new album, Across The Dark, the vocalist/multi-instrumentalist stepped up to write and produce all the songs himself. “When a band isn’t changing, it’s not growing,” says Whitwham. From the band’s inception, it has redefined itself with every new release; from Hymns of Love and Spirits through When You Left The Fire, Island of Echoes, Between Colours and various EPs. </p>
-				<p>The evolution of their sound has run the gamut from four part harmonies and its initial chamber folk sound to duo lead vocals and an expanded sonic palette ranging from cinematic indie pop to anthemic folk rock. The current band includes vocalist/guitarist Raven Shields, bassist/vocalist Tavo Diez de Bonilla and drummer Mike Brushey.</p>
-				<p>In its eight year existence, the Wilderness of Manitoba’s strengths come as a direct result of the wealth of traveling the band has done; playing a multitude of festivals and touring in the UK, the Netherlands, Germany, the USA and Canada. “The live show,” says Whitwham, “is an in-the-moment portrait of the band and its efforts.” Those efforts were recognized when the Wilderness of Manitoba was nominated for a JUNO, the Canadian equivalent to a Grammy or Brit Award. Summing things up, Whitwham says, “There is no lacking in the quantity of ideas in terms of our music and the band’s future.” </p>
+				<?php echo CFS()->get( 'the_wilderness_of_manitoba' ); ?>
 			</div>
 			<div class="panel"><!-- Videos -->
 				<div class="title">
 					<h3>Videos</h3>
 				</div>
 				<div class="content">
-					<iframe width="100%" height="170" src="https://www.youtube.com/embed/CAGloL6ySOk" frameborder="0" allowfullscreen></iframe>
-					<iframe width="100%" height="170" src="https://www.youtube.com/embed/Qtz6KM3HDIg" frameborder="0" allowfullscreen></iframe>
-					<iframe width="100%" height="170" src="https://www.youtube.com/embed/Zm8AqyQf9Gk" frameborder="0" allowfullscreen></iframe>
+					<?php echo CFS()->get( 'videos' ); ?>
 				</div>
 			</div>
 		</div>
@@ -41,6 +36,7 @@ get_header(); ?>
 				<h3>Press</h3>
 			</div>
 			<div class="content">
+				<?php echo CFS()->get( 'press' ); ?>
 			</div>
 		</div>
 		<div class="panel"><!-- Highlights -->
@@ -48,6 +44,7 @@ get_header(); ?>
 				<h3>Highlights</h3>
 			</div>
 			<div class="content">
+				<?php echo CFS()->get( 'highlights' ); ?>
 			</div>
 		</div>
 		<div class="panel"><!-- Photos -->
@@ -55,6 +52,10 @@ get_header(); ?>
 				<h3>Photos</h3>
 			</div>
 			<div class="content">
+				<p>Click to download high resolution image:</p>
+				<div class="photos">
+					<?php echo CFS()->get( 'photos' ); ?>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -63,11 +64,13 @@ get_header(); ?>
 			<h3>Discography</h3>
 		</div>
 		<div class="content">
+			<?php echo CFS()->get( 'discography' ); ?>
 		</div>
 		<div class="title"><!-- Contact -->
 			<h3>Contact</h3>
 		</div>
 		<div class="content">
+			<?php echo CFS()->get( 'contact' ); ?>
 		</div>
 	</aside>
 </main><!-- #main -->
