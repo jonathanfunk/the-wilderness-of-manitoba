@@ -5,11 +5,7 @@
 	margin: 0 auto;
 	height: 100%;
 }
-
 .site-content {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
   .title {
 		background-color: $color_header-bg;
     width: 100%;
@@ -25,21 +21,36 @@
 }
 
 .site-main {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
 	.collumn {
-		max-width: 300px;
+		max-width: 100%;
 		margin: 0 25px 0;
+		@include tablet {
+			width: 100%;
+			max-width: calc(50% - 50px);
+			&:nth-child(1){
+				float: left;
+			}
+			&:nth-child(2){
+				float: right;
+				max-width: calc(50% - 50px);
+			}
+		}
+		@include desktop {
+			float: none;
+			max-width: 300px;
+		}
 	}
 	aside {
-		max-width: 300px;
+		max-width: 100%;
 		margin: 0 25px 0;
+		@include tablet {
+			width: 100%;
+			max-width: calc(50% - 50px);
+			float: right;
+		}
 		@include desktop {
-			width: 200px;
-			h3 {
-				font-size: 25px;
-			}
+			float: none;
+			max-width: 200px;
 		}
 	}
 	.panel {
@@ -79,5 +90,9 @@
 				width: 50px;
 			}
 		}
+	}
+	@include desktop {
+		display: flex;
+		justify-content: space-between;
 	}
 }

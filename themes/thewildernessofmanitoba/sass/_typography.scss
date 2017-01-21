@@ -28,9 +28,6 @@ h2 {
 h3 {
 	font-size: 25px;
 	font-weight: normal;
-	@include desktop {
-		font-size: 35px;
-	}
 }
 
 /* Copy */

@@ -247,9 +247,6 @@ h2 {
 h3 {
   font-size: 25px;
   font-weight: normal; }
-  @media (min-width: 1000px) {
-    h3 {
-      font-size: 35px; } }
 
 /* Copy */
 p {
@@ -512,61 +509,56 @@ a {
   margin: 0 auto;
   height: 100%; }
 
-.site-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .site-content .title {
-    background-color: #efeff0;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    padding-left: 30px;
-    margin-bottom: 30px; }
-  .site-content .content {
-    padding: 0 0 30px;
-    height: auto; }
+.site-content .title {
+  background-color: #efeff0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 30px;
+  margin-bottom: 30px; }
 
-.site-main {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .site-main .collumn {
-    max-width: 300px;
-    margin: 0 25px 0; }
-  .site-main aside {
-    max-width: 300px;
-    margin: 0 25px 0; }
-    @media (min-width: 1000px) {
-      .site-main aside {
-        width: 200px; }
-        .site-main aside h3 {
-          font-size: 25px; } }
-  .site-main .panel iframe {
-    margin-bottom: 30px; }
-  .site-main .panel .title {
-    position: relative;
-    cursor: pointer; }
-    .site-main .panel .title:after {
-      content: '\f105';
-      font-family: "FontAwesome";
-      text-align: center;
-      border-left: 4px solid white;
-      position: absolute;
-      right: 0;
-      top: 0;
-      height: 50px;
-      width: 50px; }
-  .site-main .panel .content {
-    display: none; }
-  .site-main .current .title:after {
-    content: '\f107';
+.site-content .content {
+  padding: 0 0 30px;
+  height: auto; }
+
+.site-main .collumn {
+  max-width: 100%;
+  margin: 0 25px 0; }
+  @media (min-width: 600px) {
+    .site-main .collumn {
+      width: 100%;
+      max-width: calc(50% - 50px); }
+      .site-main .collumn:nth-child(1) {
+        float: left; }
+      .site-main .collumn:nth-child(2) {
+        float: right;
+        max-width: calc(50% - 50px); } }
+  @media (min-width: 1000px) {
+    .site-main .collumn {
+      float: none;
+      max-width: 300px; } }
+
+.site-main aside {
+  max-width: 100%;
+  margin: 0 25px 0; }
+  @media (min-width: 600px) {
+    .site-main aside {
+      width: 100%;
+      max-width: calc(50% - 50px);
+      float: right; } }
+  @media (min-width: 1000px) {
+    .site-main aside {
+      float: none;
+      max-width: 200px; } }
+
+.site-main .panel iframe {
+  margin-bottom: 30px; }
+
+.site-main .panel .title {
+  position: relative;
+  cursor: pointer; }
+  .site-main .panel .title:after {
+    content: '\f105';
     font-family: "FontAwesome";
     text-align: center;
     border-left: 4px solid white;
@@ -575,6 +567,27 @@ a {
     top: 0;
     height: 50px;
     width: 50px; }
+
+.site-main .panel .content {
+  display: none; }
+
+.site-main .current .title:after {
+  content: '\f107';
+  font-family: "FontAwesome";
+  text-align: center;
+  border-left: 4px solid white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50px;
+  width: 50px; }
+
+@media (min-width: 1000px) {
+  .site-main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; } }
 
 /*--------------------------------------------------------------
 # Accessibility
