@@ -23,7 +23,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php red_starter_numbered_pagination(); ?>
+			<?php the_wilderness_of_manitoba_numbered_pagination(); ?>
 
 		<?php else : ?>
 
