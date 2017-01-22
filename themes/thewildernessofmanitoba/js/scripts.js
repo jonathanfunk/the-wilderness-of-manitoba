@@ -1,20 +1,11 @@
 (function($) {
 
- //This gives the navigation an overlay on scroll.
- // $(window).scroll(function() {
- //      var scroll = $(window).scrollTop();
- //      if (scroll >= 10) {
- //        $("#masthead").addClass("overlay");
- //      } else {
- //        $("#masthead").removeClass("overlay");
- //
- //      }
- //  });
- //
- //  $('.faq-text').on('click', function(){
- //    $(this).toggleClass('move');
- //  })
+  //This will animate the hero image's size on scroll
+  $(window).on('scroll touchmove', function () {
+     $('#masthead').toggleClass('minified', $(document).scrollTop() > 0);
+ });
 
+ //This will toggle the panel's height on click
  $('.panel .title').on('click', function(){
    $(this).siblings().slideToggle(500).parent().toggleClass('current');
  });

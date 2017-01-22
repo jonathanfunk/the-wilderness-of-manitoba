@@ -30,7 +30,7 @@ a {
 	width: 100vw;
 	height: 200px;
 	background: url(../../images/wilderness-mobile.jpg);
-	background-size: cover;
+	background-size: 150;
 	.container {
 		padding: 10px 25px;
 		@include tablet {
@@ -56,7 +56,8 @@ a {
 		}
 		h2 {
 			@include tablet {
-				font-size: 20px;
+				font-size: 1.3rem;
+				transition: all 1s ease;
 			}
 		}
 	}
@@ -67,11 +68,28 @@ a {
 	}
 	@include desktop {
 		background: url(../../images/wilderness.jpg);
-		background-size: cover;
+		background-size: 100%;
+		background-position: top center;
 		height: 100vh;
+		transition: all 1.5s ease;
+		.overlay {
+			background-color: rgba(255,255,255,0);
+			height: 100%;
+			transition: all 1s ease;
+		}
 	}
 	.container {
 		position: relative;
+	}
+}
+.minified {
+	height: 260px;
+	background-size: 150%;
+	.overlay {
+		background-color: rgba(255,255,255,.75);
+	}
+	h2 {
+		color: $color__text-main;
 	}
 }
 
