@@ -60,6 +60,13 @@ a {
 				transition: all 1s ease;
 			}
 		}
+		@include desktop {
+			position: absolute;
+			left: 0;
+			right: 0;
+			height: auto;
+			max-height: inherit;
+		}
 	}
 	@include tablet {
 		height: 400px;
@@ -67,9 +74,8 @@ a {
 		background-size: cover;
 	}
 	@include desktop {
-		background: url(../../images/wilderness.jpg);
-		background-size: 100%;
-		background-position: top center;
+		background: url(../../images/wilderness.jpg) no-repeat;
+		background-size: cover;
 		height: 100vh;
 		transition: all 1.5s ease;
 		.overlay {
@@ -83,13 +89,21 @@ a {
 	}
 }
 .minified {
-	height: 260px;
-	background-size: 150%;
-	.overlay {
-		background-color: rgba(255,255,255,.75);
-	}
-	h2 {
-		color: $color__text-main;
+	@include desktop {
+		height: 190px;
+		.site-branding {
+
+		}
+		.overlay {
+			background-color: rgba(255,255,255,.75);
+		}
+		h2 {
+			color: $color__text-main;
+		}
+		img {
+			margin-bottom: 30px;
+			transition: all 1s ease;
+		}
 	}
 }
 

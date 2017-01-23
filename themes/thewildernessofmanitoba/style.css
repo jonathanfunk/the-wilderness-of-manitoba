@@ -467,16 +467,22 @@ a {
       .site-header .site-branding h2 {
         font-size: 1.3rem;
         transition: all 1s ease; } }
+    @media (min-width: 1025px) {
+      .site-header .site-branding {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: auto;
+        max-height: inherit; } }
   @media (min-width: 600px) {
     .site-header {
       height: 400px;
       background: url(../../images/wilderness-tablet.jpg);
       background-size: cover; } }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .site-header {
-      background: url(../../images/wilderness.jpg);
-      background-size: 100%;
-      background-position: top center;
+      background: url(../../images/wilderness.jpg) no-repeat;
+      background-size: cover;
       height: 100vh;
       transition: all 1.5s ease; }
       .site-header .overlay {
@@ -486,13 +492,16 @@ a {
   .site-header .container {
     position: relative; }
 
-.minified {
-  height: 260px;
-  background-size: 150%; }
-  .minified .overlay {
-    background-color: rgba(255, 255, 255, 0.75); }
-  .minified h2 {
-    color: #7a7a7a; }
+@media (min-width: 1025px) {
+  .minified {
+    height: 190px; }
+    .minified .overlay {
+      background-color: rgba(255, 255, 255, 0.75); }
+    .minified h2 {
+      color: #7a7a7a; }
+    .minified img {
+      margin-bottom: 30px;
+      transition: all 1s ease; } }
 
 /* Social */
 .social {
@@ -503,7 +512,7 @@ a {
       display: flex;
       -ms-flex-pack: center;
           justify-content: center; } }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .social {
       position: absolute;
       top: 30px;
@@ -540,6 +549,10 @@ a {
   padding: 0 0 30px;
   height: auto; }
 
+@media (min-width: 1025px) {
+  .site-content {
+    padding-top: 100px; } }
+
 .site-main .collumn {
   max-width: 100%;
   margin: 0 25px 0; }
@@ -570,7 +583,7 @@ a {
             justify-content: space-between; } }
     .site-main .collumn .photos p {
       width: 135px; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .site-main .collumn {
       float: none;
       max-width: 300px; } }
@@ -583,7 +596,7 @@ a {
       width: 100%;
       max-width: calc(50% - 50px);
       float: right; } }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .site-main aside {
       float: none;
       max-width: 200px; } }
@@ -623,7 +636,7 @@ a {
   height: 50px;
   width: 50px; }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
   .site-main {
     display: -ms-flexbox;
     display: flex;
