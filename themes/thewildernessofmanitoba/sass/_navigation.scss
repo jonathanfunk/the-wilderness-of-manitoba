@@ -30,7 +30,7 @@ a {
 	width: 100vw;
 	height: 200px;
 	background: url(../../images/wilderness-mobile.jpg);
-	background-size: 150;
+	background-size: cover;
 	.container {
 		padding: 10px 25px;
 		@include tablet {
