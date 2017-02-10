@@ -15,14 +15,6 @@ get_header(); ?>
 			<div class="content">
 				<?php echo CFS()->get( 'the_wilderness_of_manitoba' ); ?>
 			</div>
-			<div class="panel"><!-- Videos -->
-				<div class="title">
-					<h3>Videos</h3>
-				</div>
-				<div class="content">
-					<?php echo CFS()->get( 'videos' ); ?>
-				</div>
-			</div>
 		</div>
 		<div class="collumn"><!-- Collumn 2 -->
 			<div class="title"><!-- Music -->
@@ -56,6 +48,14 @@ get_header(); ?>
 				<div class="photos">
 					<?php echo CFS()->get( 'photos' ); ?>
 				</div>
+			</div>
+		</div>
+		<div class="panel"><!-- Videos -->
+			<div class="title">
+				<h3>Videos</h3>
+			</div>
+			<div class="content">
+				<?php echo CFS()->get( 'videos' ); ?>
 			</div>
 		</div>
 	</div>

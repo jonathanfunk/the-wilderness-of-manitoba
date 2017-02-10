@@ -466,7 +466,7 @@ a {
     @media (min-width: 600px) {
       .site-header .site-branding h2 {
         font-size: 1.3rem;
-        transition: all 1s ease; } }
+        transition: color 1s ease; } }
     @media (min-width: 1025px) {
       .site-header .site-branding {
         position: absolute;
@@ -484,11 +484,11 @@ a {
       background: url(../../images/wilderness.jpg) no-repeat;
       background-size: cover;
       height: 100vh;
-      transition: all 1.5s ease; }
+      transition: height 2s ease 1s; }
       .site-header .overlay {
         background-color: rgba(255, 255, 255, 0);
         height: 100%;
-        transition: all 1s ease; } }
+        transition: background-color 1s ease; } }
   .site-header .container {
     position: relative; }
 
@@ -589,6 +589,7 @@ a {
       max-width: 300px; } }
 
 .site-main aside {
+  word-spacing: -1px;
   max-width: 100%;
   margin: 0 25px 0; }
   @media (min-width: 600px) {
