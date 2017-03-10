@@ -18,4 +18,4 @@ This is a single page website for The Wilderness of Manitoba, a folk band based 
 * Git/Github
 
 ## Learning Experience
-This was one of the easiest sites I've built so far. For this project, I worked on planning ahead, sketching wireframes and writing down the dimensions before I code. I was able to finish this site quickly while maintaining quality.
+This was one of the easiest sites I've built so far. For this project, I worked on planning ahead, sketching wireframes and writing down the dimensions before I code. I wrote the jQuery plugins for the hero image animation & expandable sections. I was able to finish this site quickly while maintaining quality.
